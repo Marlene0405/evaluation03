@@ -10,7 +10,7 @@ function get_evenement()
 
     $aData = array();
 
-    $url='http://zumba/wp-json/wp/v2/evenements';
+    $url='http://localhost/evaluation03/wordpress/wp-json/wp/v2/evenements';
 
     $sJson=file_get_contents($url);
     //echo $decode;
@@ -18,7 +18,7 @@ function get_evenement()
 
     foreach ($aTab as $aEvenement){
        // print_r($aEvenement);
-       echo "ajout toto";
+
         $aData[] = [
             $aEvenement['title']['rendered'],
             $aEvenement['content']['rendered'],
