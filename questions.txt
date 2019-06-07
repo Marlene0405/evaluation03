@@ -1,0 +1,77 @@
+﻿Evaluation 03 - Développement Plugin wordpress
+
+1- Pourquoi paramétrer un utilisateur evaluation03 pour accéder à la base de donnée
+au lieu d'utiliser l'utilisateur 'root'?
+réponse: Pour des raison de sécurité, par exemple : éviter le piratage.
+
+2- Pour améliorer la sécurité de la base de donnée quels autres paramétrages de l'utilisateur
+pouvez vous utiliser?
+réponse: les privilèges
+
+3- Qu'est-ce qu'un virtualhost dans apache?
+réponse: il permet d'heberger plusieurs sites différents sur un meme serveur.
+
+4- A quoi sert un thème enfant ? Quelle est son utilité quand on fait une mise à jour de wordpress ?
+réponse: il permet de beneficier du thème sur les pages codés/créer et surtout de ses futures mises à jours.
+
+5- Que signifie i18n ? A quoi sert la fonction __( 'Hello world', 'my-text-domain' ); ?
+réponse: En développement de logiciel, l’internationalisation (abrégé en i18n, où 18 représente le nombre de caractères entre le i et le n dans le mot) est la mise en place d’un système permettant la régionalisation du logiciel,
+c’est-à-dire son adaptation à des langues et des cultures différentes.
+L’objectif de l’internationalisation est donc de produire un programme unique qui puisse inclure plusieurs langues pour l’interface.
+
+6- Dans un thème à quoi sert le fichier 404.php ? page.php ?
+réponse: - 404.php : Chaque thème fourni avec WordPress contient un fichier 404.php, mais tous les thèmes ne possèdent pas leur propre fichier de modèle d'erreur 404 personnalisé.
+	 S'ils le font, il s'appellera 404.php . WordPress utilisera automatiquement cette page si une erreur Page non trouvée se produit.
+	 La page 404.php normale fournie avec votre thème fonctionnera, mais indique-t-elle ce que vous voulez, et offre-t-elle le type d'aide que vous souhaitez qu'elle offre? Si la réponse est non, vous voudrez personnaliser le message dans le fichier de modèle.
+	 - page.php : ce fichier affiche le contenu statique d’un site. généralement c’est le menu dans l’en tête du site.
+
+7- Qu'est ce qu'un "custom post type" ?
+réponse: permet de créer ses propres types de publication personnalisés et de les appeler comme on  le souhaite, soit avec un plugin existant ou en créer un avec la fonction register_post_type ().
+
+8- Qu'est ce qu'un "custom field" ?
+réponse: C'est plug-in permet d’ajouter des champs personnalisés à vos articles, pages ou contenus personnalisés. Vous pourriez ainsi créer à la manière d’un formulaire une interface sur mesure pour cadrer le contenu ajouté par les administrateurs du site.
+
+12- Quelles sont les principales fonctions de l'API wordpress ?
+réponse: L' API WordPress représente l'interface de programmation d'application WordPress.
+Il peut être séparé en plusieurs sections / sujets de l'API. 
+Chacune d'elles couvre les fonctions impliquées et l'utilisation d'un ensemble de fonctionnalités donné. 
+Ensemble, ils forment ce que l’on pourrait appeler l’API WordPress, qui est l’interface plugin / thème / add-on créée par l’ensemble du projet WordPress.
+
+Si vous avez lu tout cela, vous devriez avoir une bonne idée de la façon d'étendre WordPress via des plugins.
+
+API de tableau de bord Widgets
+API de base de données
+API HTTP
+API REST
+API d'en-tête de fichier
+API de système de fichiers
+API de métadonnées
+API Options
+API de plugin
+API Quicktags
+API de réécriture
+API de paramètres
+API shortcode
+API de modification de thème
+API de personnalisation de thème
+API transitoires
+API de widgets
+API XML-RPC WordPress (remplace les API héritées de Blogger, MovableType et metaWeblog)
+Voir aussi API WordPress.org .
+
+13- Est-ce que l'API wordpress permet de modifier le site web ? quid de la sécurité ?
+réponse: non, l'API permet simplement de se connecter et recupere les informations. 
+Faire attention aux informations qui transitent via l'api car elles sont publiques.
+
+14- Qu'est ce que la wordpress loop ?
+réponse: Le code à travers laquelle WordPress va passer pour afficher chaque Post. La boucle, ou son nom original « The Loop », est le noyau dur de WordPress. 
+Il s'agit d'une simple boucle PHP par laquelle WordPress va passer pour afficher chaque Post.
+
+15- Quelles sont les fonctions principales du plugin reservation-evenements ?
+réponse: vérifier que l'utilisateur est bien connecté, et réserver ou annuler ou une reservation.
+
+16- A quoi sert la fonction wp_nonce_field() ?
+réponse: Permet de vérifié si les données du formulaire viennent bien du site
+
+17- Comment sont stockées les réservations ?
+réponse: Dans la bdd via les post_meta.
