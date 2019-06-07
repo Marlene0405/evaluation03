@@ -14,6 +14,8 @@ define('RESERVATION_TEMPLATE', '
 	</p>
 </form>
 ');
+// Action pour traiter le formulaire de reservation
+add_action('template_redirect', 'reservation_evenements_reserver');
 
 // Recuperation du code HTML du formaulaire de reservation
 function reservation_evenements_getform( $postId ) {
